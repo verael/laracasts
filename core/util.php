@@ -1,12 +1,12 @@
 <?php
 
 
-function debug($var)
+function debug($var, $exit = false)
 {
     echo '<pre>';
     var_dump($var);
     echo '</pre>';
-    die();
+    if ($exit) die();
 }
 
 function isUrl($url) {
